@@ -1,20 +1,34 @@
 import { AlignJustify } from 'lucide-react';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
   const menuItems = ['Home', 'About', 'Blog', 'Roadmap', 'Team', 'Rarity', 'Contact'];
 
   return (
-    <nav className="navbar pt-8 py-5 w-full max-w-7xl justify-between mx-auto px-6">
-      <div className="flex gap-16 items-center">
+    <nav className="navbar pt-8 pb-4 w-full max-w-7xl justify-between mx-auto px-6">
+      <div className="flex gap-20 items-center">
         <a href="#" className="text-lg flex items-baseline gap-2 tracking-widest font-bold">
           <img src="/logo/logo.svg" alt="Holocoin logo" className="h-4" />
           HOLOCOIN
         </a>
         <div className="hidden lg:flex">
-          <ul className="flex gap-8">
-            {menuItems.map((item) => (
-              <li key={item} className="hover:text-primary hover:font-extrabold text-primary/60 font-semibold">
-                <a href="#">{item}</a>
+          <ul className="flex gap-12">
+            {menuItems.map((item, i) => (
+              <li
+                key={item}
+                onMouseEnter={() => setActiveIndex(i)}
+                onMouseLeave={() => setActiveIndex(0)}
+                className="hover:text-primary hover:font-extrabold text-primary/60 font-semibold flex flex-col items-center gap-1 relative">
+                {i === activeIndex && (
+                  <>
+                    <a href="#" className="text-primary font-extrabold">
+                      {item}
+                    </a>
+                    <span className="absolute top-7 h-[3px] rounded-tl-full rounded-tr-full w-5 bg-secondary"></span>
+                  </>
+                )}
+                {i !== activeIndex && <a href="#">{item}</a>}
               </li>
             ))}
           </ul>
