@@ -13,7 +13,7 @@ const Navbar = () => {
           HOLOCOIN
         </a>
         <div className="hidden lg:flex">
-          <ul className="flex gap-12">
+          <ul className="flex">
             {menuItems.map((item, i) => (
               <li
                 key={item}
@@ -22,13 +22,17 @@ const Navbar = () => {
                 className="hover:text-primary hover:font-extrabold text-primary/60 font-semibold flex flex-col items-center gap-1 relative">
                 {i === activeIndex && (
                   <>
-                    <a href="#" className="text-primary font-extrabold">
+                    <a href="#" className="text-primary font-extrabold px-6">
                       {item}
                     </a>
                     <span className="absolute top-7 h-[3px] rounded-tl-full rounded-tr-full w-5 bg-secondary"></span>
                   </>
                 )}
-                {i !== activeIndex && <a href="#">{item}</a>}
+                {i !== activeIndex && (
+                  <a href="#" className="px-6">
+                    {item}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
