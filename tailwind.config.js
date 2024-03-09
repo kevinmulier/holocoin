@@ -12,4 +12,21 @@ export default {
     },
   },
   plugins: [daisyui],
+  daisyui: {
+    themes: [
+      {
+        holocoin: {
+          'primary': '#ffffff',
+          'secondary': '#DD364D',
+          'accent': '#999CA3',
+          'neutral': '#13151B',
+          'base-100': '#0d0f15',
+          'info': '#0000ff',
+          'success': '#00ff00',
+          'warning': '#00ff00',
+          'error': '#ff0000',
+        },
+      },
+    ],
+  },
 };
