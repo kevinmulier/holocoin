@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar pt-8 pb-4 w-full max-w-7xl justify-between mx-auto px-6">
-      <div className="flex gap-20 items-center">
+      <div className="flex gap-[72px] items-center">
         <a href="#" className="text-lg flex items-baseline gap-2 tracking-widest font-bold">
           <img src="/logo/logo.svg" alt="Holocoin logo" className="h-4" />
           HOLOCOIN
