@@ -15,7 +15,9 @@ const Navbar = () => {
         </a>
         <NavbarDesktopMenu menuItems={menuItems} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       </div>
-      <button className="min-h-0 py-3 font-semibold rounded-full btn btn-secondary text-primary max-lg:hidden h-fit">
+      <button
+        className="min-h-0 py-3 font-semibold rounded-full btn btn-secondary text-primary max-lg:hidden h-fit"
+        aria-label="Buy Holocoin">
         Buy Holocoin
       </button>
       <NavbarMobileMenu menuItems={menuItems} />
