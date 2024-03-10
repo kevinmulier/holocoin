@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="mx-auto max-w-7xl">
-      <section className="flex pt-24 pb-20 pr-6 mx-auto pl-[50px] w-full max-md:flex-col max-md:pt-4 max-md:px-0 max-md:bg-gradient-to-b max-md:from-base-100/0 max-md:via-base-100/40 max-md:via-20% max-[350px]:to-[42%] max-[400px]:to-[48%] max-[450px]:to-[57%] max-[500px]:to-[62%] max-[550px]:to-[67%] max-md:to-[75%] max-md:to-base-100">
+      <section className="flex pt-24 pb-20 pr-6 mx-auto pl-[50px] w-full max-md:flex-col max-md:pt-4 max-md:px-0">
         <div className="flex flex-col max-md:mt-16 max-md:px-7 md:w-6/12">
           <h1 className="mb-8 text-6xl font-semibold max-lg:text-[38px] text-primary">
             Lorem ipsum dolor sit amet, <span className="text-secondary">Ghirs</span>
@@ -22,11 +22,10 @@ const Hero = () => {
             Join the adventure
           </button>
         </div>
-        <img
-          src="/images/hero_image.png"
-          alt="Hero banner"
-          className="w-6/12 h-fit max-md:absolute max-md:-z-10 max-md:w-fit max-md:max-h-80 max-md:left-[50%] max-md:translate-x-[-50%]"
-        />
+        <div className="relative w-6/12 h-fit max-md:absolute max-md:-z-10 max-md:w-full max-md:h-auto max-md:left-[50%] max-md:translate-x-[-50%]">
+          <div className="absolute inset-0 h-full bg-gradient-to-b from-base-100/10 to-base-100 md:hidden"></div>
+          <img src="/images/hero_image.png" alt="Hero banner" className="w-full" />
+        </div>
         <div className="flex flex-col gap-5 max-md:hidden">
           <a href="#">
             <img src="/logo/twitter_icon.svg" alt="Twitter" />
