@@ -5,7 +5,7 @@ const NavbarMobileMenu = ({ menuItems }) => {
   return (
     <div className="lg:hidden">
       <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-primary">
+        <div tabIndex={0} role="button" className="px-0 btn btn-ghost lg:hidden text-primary">
           <AlignJustify />
         </div>
         <ul tabIndex={0} className="menu menu-sm dropdown-content right-0 z-[10] bg-neutral rounded-box">
