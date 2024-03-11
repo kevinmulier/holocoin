@@ -22,7 +22,7 @@ const About = () => {
             <img
               src="/images/avatar.png"
               alt="Avatar"
-              className="absolute top-0 left-[50%] -translate-x-[50%] opacity-20 rounded-[120px] scale-110"
+              className="absolute top-0 left-[50%] -translate-x-[50%] opacity-20 rounded-[120px] scale-x-110"
             />
           </div>
           <div className="flex flex-col items-center justify-center">
