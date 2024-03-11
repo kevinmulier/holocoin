@@ -7,7 +7,7 @@ const Navbar = () => {
   const menuItems = ['Home', 'About', 'Blog', 'Roadmap', 'Team', 'Rarity', 'Contact'];
 
   return (
-    <nav className="justify-between w-full px-6 pt-8 pb-4 mx-auto navbar max-w-7xl">
+    <nav className="justify-between w-full px-6 pt-8 pb-4 mx-auto max-lg:pt-4 navbar max-w-7xl">
       <div className="flex gap-[72px] items-center">
         <a href="#" className="flex items-baseline gap-2 text-lg font-bold tracking-widest text-primary">
           <img src="/logo/logo.svg" alt="Holocoin logo" className="h-4" />
