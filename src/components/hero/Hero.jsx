@@ -5,8 +5,8 @@ import HeroText from './HeroText';
 
 const Hero = () => {
   return (
-    <div className="mx-auto max-w-7xl">
-      <section className="flex pt-24 pb-20 pr-6 mx-auto pl-[50px] w-full max-md:flex-col max-md:pt-4 max-md:px-0">
+    <div className="pb-20 mx-auto max-w-7xl">
+      <section className="flex pt-24 pb-20 max-md:pb-8 pr-6 mx-auto pl-[50px] w-full max-md:flex-col max-md:pt-4 max-md:px-0">
         <HeroText />
         <HeroImage />
         <HeroSocials />
