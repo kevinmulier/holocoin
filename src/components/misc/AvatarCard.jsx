@@ -16,7 +16,7 @@ const AvatarCard = () => {
         <img
           src="/images/avatar.webp"
           alt="Avatar"
-          className="absolute top-0 left-[50%] -translate-x-[50%] opacity-20 rounded-[120px] scale-x-110"
+          className="absolute top-5 left-[50%] -translate-x-[50%] opacity-[0.25] rounded-[120px] scale-110"
         />
       </div>
       <div className="flex flex-col items-center justify-center">
