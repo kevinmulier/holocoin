@@ -1,10 +1,10 @@
 import AvatarCard from './AvatarCard';
-import { NextButton, PrevButton, usePrevNextButtons } from './EmblaCarouselArrowButtons';
+import { usePrevNextButtons } from './EmblaCarouselArrowButtons';
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
 import useEmblaCarousel from 'embla-carousel-react';
 
 export const TeamCarousel = () => {
-  const options = { loop: true };
+  const options = {};
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
@@ -44,7 +44,7 @@ export const TeamCarousel = () => {
 };
 
 export const RarityCarouselMobile = () => {
-  const options = { loop: true };
+  const options = {};
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
@@ -53,33 +53,13 @@ export const RarityCarouselMobile = () => {
     <section className="embla lg:hidden">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
+          {Array(9)
+            .fill()
+            .map((_, index) => (
+              <div className="embla__slide" key={index}>
+                <AvatarCard />
+              </div>
+            ))}
         </div>
       </div>
 
@@ -108,33 +88,13 @@ export const RarityCarouselDesktop = () => {
     <section className="embla_desktop_rarity max-lg:hidden">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
-          <div className="embla__slide">
-            <AvatarCard />
-          </div>
+          {Array(9)
+            .fill()
+            .map((_, index) => (
+              <div className="embla__slide" key={index}>
+                <AvatarCard />
+              </div>
+            ))}
         </div>
       </div>
 
