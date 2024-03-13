@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useCallback, useEffect, useState } from 'react';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const usePrevNextButtons = (emblaApi) => {
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);

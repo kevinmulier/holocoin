@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useCallback, useEffect, useState } from 'react';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useDotButton = (emblaApi) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
