@@ -25,8 +25,10 @@ const AvatarCard = () => {
         />
       </div>
       <div className="flex flex-col items-center justify-center mt-[16%] text-center">
-        <p className="text-[22px] text-primary font-semibold">Lorem ipsum dolor</p>
-        <span className="font-extralight">Lorem ipsum dolor</span>
+        <p className="lg:[font-size:_clamp(0.875rem,-1.125rem+3.125vw,1.375rem)] text-[22px] text-primary font-semibold">
+          Lorem ipsum dolor
+        </p>
+        <span className="font-extralight lg:[font-size:_clamp(0.75rem,-1.125rem+3.125vw,1rem)]">Lorem ipsum dolor</span>
       </div>
     </>
   );
