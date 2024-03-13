@@ -1,6 +1,6 @@
 const HeroSocials = () => {
   return (
-    <div className="flex flex-col gap-5 max-md:hidden">
+    <div className="flex flex-col gap-5 ml-auto max-md:hidden">
       <a href="#" className="hover:brightness-75">
         <img src="/logo/twitter_icon.svg" alt="Twitter" />
       </a>

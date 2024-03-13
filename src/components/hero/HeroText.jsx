@@ -1,6 +1,6 @@
 const HeroText = () => {
   return (
-    <div className="flex flex-col leading-tight max-md:mt-16 max-md:px-7 md:w-6/12">
+    <div className="flex flex-col leading-tight max-md:mt-16 max-md:px-7 md:w-5/12">
       <h1 className="mb-8 [font-size:_clamp(2.375rem,1.9167rem+2.2917vw,3.75rem)] font-semibold text-primary">
         Lorem ipsum dolor sit amet, <span className="text-secondary">Ghirs</span>
       </h1>
