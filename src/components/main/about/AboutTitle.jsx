@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 const AboutTitle = ({ mobileHide, desktopHide }) => {
+  const { t } = useTranslation();
+
   const style = desktopHide
     ? 'flex flex-col mb-8 md:hidden w-fit items-center'
     : mobileHide
@@ -9,7 +12,7 @@ const AboutTitle = ({ mobileHide, desktopHide }) => {
 
   return (
     <div className={style}>
-      <h2 className="font-semibold text-[32px] text-primary">About</h2>
+      <h2 className="font-semibold text-[32px] text-primary">{t('about')}</h2>
       <span className="h-[3px] rounded-tl-full rounded-tr-full w-14 bg-secondary"></span>
     </div>
   );

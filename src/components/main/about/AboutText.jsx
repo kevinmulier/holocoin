@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const AboutText = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <p className="mb-4">
@@ -15,8 +19,8 @@ const AboutText = () => {
       </p>
       <a
         href="#"
-        className="min-h-0 px-20 py-3 font-semibold rounded-full btn btn-outline border-primary text-primary h-fit w-fit max-md:mx-auto hover:bg-primary hover:border-primary">
-        Join Discord
+        className="min-h-0 py-3 font-semibold rounded-full btn btn-outline border-primary text-primary h-fit w-[246px] max-md:mx-auto hover:bg-primary hover:border-primary">
+        {t('joinDiscordButton')}
       </a>
     </>
   );
