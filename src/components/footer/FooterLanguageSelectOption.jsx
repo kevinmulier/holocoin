@@ -16,7 +16,8 @@ const FooterLanguageSelectOption = ({ languageObject, setSelectedLanguage }) => 
         document.activeElement.blur();
       }}>
       <span className="text-primary">
-        <img src={languageObject.flagSrc} alt={languageObject.language} className="w-fit" /> {languageObject.language}
+        <img src={languageObject.flagSrc} alt={languageObject.language} className="w-fit" width="16" height="16" />{' '}
+        {languageObject.language}
       </span>
     </li>
   );

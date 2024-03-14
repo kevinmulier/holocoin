@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav className="justify-between w-full px-7 md:px-8 pt-8 pb-4 mx-auto max-lg:pt-4 navbar max-w-[1512px]">
         <div className="flex items-center lg:gap-8 xl:gap-[72px]">
           <a href="#" className="flex items-baseline gap-2 text-lg font-bold tracking-widest text-primary">
-            <img src="/logo/logo.svg" alt="Holocoin logo" className="h-4" />
+            <img src="/logo/logo.svg" alt="Holocoin logo" className="h-4" width="16" height="16" />
             HOLOCOIN
           </a>
           <NavbarDesktopMenu menuItems={menuItems} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />

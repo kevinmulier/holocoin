@@ -13,9 +13,10 @@ const VideoPlayerMain = () => {
       </button>
       <img
         srcSet="/images/lol_image_sd.webp 768w, /images/lol_image.webp 1502w"
-        sizes="(max-width: 768px) 768px, 1502px"
         alt="League of Legends NFTs"
         className="object-cover max-lg:aspect-video lg:w-full"
+        width="1502"
+        height="591"
       />
     </div>
   );
