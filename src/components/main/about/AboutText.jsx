@@ -5,14 +5,14 @@ const AboutText = () => {
 
   return (
     <>
-      <p className="mb-4">
+      <p className="mb-4 leading-tight">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus in urna nec suspendisse quis mus commodo. Lorem
         ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Lectus in urna nec suspendisse quis mus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
         ipsum dolor sit amet, consectetur adipiscing elit. Lectus in urna nec suspendisse quis mus commodo. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit.
       </p>
-      <p className="mb-8">
+      <p className="mb-8 leading-tight">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus in urna nec suspendisse quis mus commodo. Lorem
         ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Lectus in urna nec suspendisse quis mus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

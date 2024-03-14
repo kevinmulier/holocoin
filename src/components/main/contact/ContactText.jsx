@@ -5,7 +5,7 @@ const ContactText = () => {
 
   return (
     <>
-      <p className="mt-3 mb-12 text-primary">{t('contactUsText')}</p>
+      <p className="mt-3 mb-12 leading-tight text-primary">{t('contactUsText')}</p>
       <a
         href="#"
         className="min-h-0 px-20 py-3 font-semibold rounded-full btn btn-secondary text-primary h-fit w-fit max-md:mx-auto">
