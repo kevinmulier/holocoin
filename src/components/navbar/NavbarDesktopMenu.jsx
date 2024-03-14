@@ -8,14 +8,12 @@ const NavbarDesktopMenu = ({ menuItems, activeIndex, setActiveIndex }) => {
           <li
             key={item}
             onMouseEnter={() => setActiveIndex(i)}
-            className="flex flex-col items-center gap-1 font-semibold hover:text-primary hover:font-extrabold text-primary/60 w-fit">
+            className="font-semibold hover:text-primary hover:font-extrabold text-primary/60 w-fit">
             {i === activeIndex && (
-              <>
-                <a href="#" className="px-6 font-extrabold text-primary">
-                  {item}
-                </a>
-                <span className="h-[3px] rounded-tl-full rounded-tr-full w-[35%] bg-secondary"></span>
-              </>
+              <a href="#" className="flex flex-col items-center px-6 font-extrabold text-primary">
+                {item}
+                <span className="h-[3px] rounded-tl-full rounded-tr-full w-[50%] bg-secondary"></span>
+              </a>
             )}
             {i !== activeIndex && (
               <a href="#" className="px-6">
