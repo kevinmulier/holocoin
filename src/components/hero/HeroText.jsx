@@ -14,11 +14,12 @@ const HeroText = () => {
         <br />
         It&apos;s our world, let&apos;s make it personal.
       </p>
-      <button
+      <a
+        href="#"
         className="min-h-0 py-3 font-semibold rounded-full max-md:mx-auto max-w-60 btn btn-secondary text-primary h-fit max-md:px-10"
         aria-label="Join the adventure">
         Join the adventure
-      </button>
+      </a>
     </div>
   );
 };
