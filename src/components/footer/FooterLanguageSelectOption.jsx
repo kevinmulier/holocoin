@@ -1,10 +1,18 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 const FooterLanguageSelectOption = ({ languageObject, setSelectedLanguage }) => {
+  const { i18n } = useTranslation();
+
+  const changeLanguage = () => {
+    i18n.changeLanguage(languageObject.languageAbbrv);
+  };
+
   return (
     <li
       onClick={() => {
         setSelectedLanguage({ flagSrc: languageObject.flagSrc, language: languageObject.language });
+        changeLanguage();
         document.activeElement.blur();
       }}>
       <span className="text-primary">

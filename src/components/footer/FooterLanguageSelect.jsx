@@ -6,8 +6,8 @@ const FooterLanguageSelect = () => {
   const [selectedLanguage, setSelectedLanguage] = useState({ flagSrc: '/logo/en_rounded.png', language: 'English' });
 
   const languages = [
-    { flagSrc: '/logo/en_rounded.png', language: 'English' },
-    { flagSrc: '/logo/fr_rounded.png', language: 'Français' },
+    { flagSrc: '/logo/en_rounded.png', language: 'English', languageAbbrv: 'en' },
+    { flagSrc: '/logo/fr_rounded.png', language: 'Français', languageAbbrv: 'fr' },
   ];
 
   return (

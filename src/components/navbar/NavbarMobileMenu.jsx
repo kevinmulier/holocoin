@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import { AlignJustify } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const NavbarMobileMenu = ({ menuItems }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="lg:hidden">
       <div className="dropdown">
@@ -12,7 +15,7 @@ const NavbarMobileMenu = ({ menuItems }) => {
           {menuItems.map((item) => (
             <li key={item}>
               <a href="#" className="px-5 text-lg">
-                {item}
+                {t(item)}
               </a>
             </li>
           ))}
