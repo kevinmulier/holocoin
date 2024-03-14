@@ -2,7 +2,7 @@ const AvatarCard = () => {
   return (
     <>
       <div className="relative flex justify-center w-full">
-        <img src="/images/avatar.webp" alt="Avatar" className="w-full opacity-0 max-w-80" />
+        <img src="/images/avatar.webp" alt="Avatar" className="w-full opacity-0 max-w-80" width="238" height="279" />
         <img
           src="/images/avatar.webp"
           alt="Avatar"
