@@ -55,7 +55,7 @@ export const RarityCarouselMobile = () => {
     <section className="embla lg:hidden">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {Array(9)
+          {Array(4)
             .fill()
             .map((_, index) => (
               <div className="embla__slide" key={index}>
