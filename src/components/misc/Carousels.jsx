@@ -3,6 +3,7 @@ import { usePrevNextButtons } from './EmblaCarouselArrowButtons';
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
 import useEmblaCarousel from 'embla-carousel-react';
 import { SelectedSnapDisplay, useSelectedSnapDisplay } from './EmblaSelectedSnapDisplay';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const TeamCarousel = () => {
   const options = {};
@@ -104,10 +105,10 @@ export const RarityCarouselDesktop = () => {
         <div className="flex items-center gap-8 mx-auto font-semibold md:gap-4 w-fit md:mr-0 md:ml-auto">
           <SelectedSnapDisplay selectedSnap={selectedSnap} snapCount={snapCount} />
           <button className="text-lg btn btn-circle btn-secondary text-primary md:order-1" onClick={onPrevButtonClick}>
-            &lt;
+            <ChevronLeft />
           </button>
           <button className="text-lg btn btn-circle btn-secondary text-primary md:order-2" onClick={onNextButtonClick}>
-            &gt;
+            <ChevronRight />
           </button>
         </div>
       </div>
