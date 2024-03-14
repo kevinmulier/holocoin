@@ -14,14 +14,14 @@ const HeroSwitcher = ({ slideNum, setSlideNum }) => {
   return (
     <div className="flex items-center gap-8 mx-auto font-semibold md:gap-4 w-fit md:mr-24 md:ml-auto">
       <button
-        className="text-lg btn btn-circle btn-secondary bg-[#AA1D30] text-primary md:order-1"
+        className="text-lg btn btn-circle btn-secondary text-primary md:order-1"
         onClick={() => handleSwitchSlide(false)}
         aria-label="Previous slides">
         <ChevronLeft />
       </button>
       <span className="md:mr-3">{slideNum.toString().padStart(2, '0')}/03</span>
       <button
-        className="text-lg btn btn-circle btn-secondary bg-[#AA1D30] text-primary md:order-2"
+        className="text-lg btn btn-circle btn-secondary text-primary md:order-2"
         onClick={() => handleSwitchSlide(true)}
         aria-label="Next slides">
         <ChevronRight />

@@ -17,7 +17,7 @@ export default {
       {
         holocoin: {
           'primary': '#ffffff',
-          'secondary': '#DD364D',
+          'secondary': '#AA1D30',
           'accent': '#999CA3',
           'neutral': '#13151B',
           'base-100': '#0d0f15',
