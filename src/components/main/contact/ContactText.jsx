@@ -8,7 +8,7 @@ const ContactText = () => {
       <p className="mt-3 mb-12 text-primary">{t('contactUsText')}</p>
       <a
         href="#"
-        className="min-h-0 px-20 py-3 font-semibold rounded-full btn btn-secondary text-primary h-fit w-fit max-md:mx-auto">
+        className="min-h-0 px-20 py-3 font-semibold rounded-full btn btn-secondary bg-[#AA1D30] text-primary h-fit w-fit max-md:mx-auto">
         {t('contactUsButton')}
       </a>
     </>

@@ -20,7 +20,7 @@ const HeroText = () => {
       </p>
       <a
         href="#"
-        className="min-h-0 py-3 font-semibold rounded-full max-md:mx-auto max-w-60 btn btn-secondary text-primary h-fit max-md:px-10"
+        className="min-h-0 py-3 font-semibold rounded-full max-md:mx-auto max-w-60 btn btn-secondary bg-[#AA1D30] text-primary h-fit max-md:px-10"
         aria-label="Join the adventure">
         {t('heroJoinButton')}
       </a>
