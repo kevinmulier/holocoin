@@ -1,8 +1,14 @@
 import { Play } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const VideoPlayerMain = () => {
   return (
-    <div className="relative flex justify-center items-center w-full mx-auto max-w-[1536px]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 1 }}
+      transition={{ duration: 0.5 }}
+      className="relative flex justify-center items-center w-full mx-auto max-w-[1536px]">
       <div className="absolute inset-0 h-full bg-gradient-to-b from-base-100 from-[0.1%] via-transparent to-[99.9%] to-base-100 max-md:hidden"></div>
       <div className="absolute inset-0 h-full bg-gradient-to-b from-neutral from-[0.1%] via-transparent to-[99.9%] to-base-100 md:hidden"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-base-100 from-[0.1%] via-transparent to-[99.9%] to-base-100 max-2xl:hidden"></div>
@@ -18,7 +24,7 @@ const VideoPlayerMain = () => {
         width="1502"
         height="591"
       />
-    </div>
+    </motion.div>
   );
 };
 
