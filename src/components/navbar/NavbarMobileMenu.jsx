@@ -15,7 +15,9 @@ const NavbarMobileMenu = ({ menuItems }) => {
           aria-label="Open/Close menu">
           <AlignJustify />
         </div>
-        <ul tabIndex={0} className="menu menu-sm dropdown-content right-0 z-[10] bg-neutral rounded-box">
+        <ul
+          tabIndex={0}
+          className="menu menu-sm dropdown-content right-0 z-[10] bg-neutral brightness-150 rounded-box text-">
           {menuItems.map((item) => (
             <li key={item}>
               <a href="#" className="px-5 text-lg">
